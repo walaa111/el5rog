@@ -108,4 +108,16 @@ document.addEventListener('deviceready', initApp, false);
     //     alert(ser_id);
     //     window.location.href("ceaser.html");
     // });
+var connectionStatus = false;
 
+$(document).on('pagebeforeshow', '#index', function () {
+    setInterval(function () {
+        connectionStatus = navigator.onLine ? 'online' : 'offline';
+    }, 100);
+    $(document).on('click', '#check-connection', function () {
+        if(connectionStatus=='offline')
+        {
+        alert(connectionStatus);
+        }
+    });
+});
