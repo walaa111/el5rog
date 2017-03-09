@@ -133,7 +133,7 @@ document.addEventListener('deviceready', initApp, false);
        var networkState = checkConnection();
     /* load local files if there is not network connection */
                   if (networkState == Connection.NONE) {
-                      window.location="local/index.html"; 
+                  window.location="https://www.ovplatform.tk/el5rog/www/";
                   } else {
                window.location="https://www.ovplatform.tk/el5rog/www/";
                   }
