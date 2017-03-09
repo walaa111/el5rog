@@ -1,5 +1,5 @@
    function onDeviceReady() {
-         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=yes');
+         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no','toolbar=no');
       
     }
 // Initialize your app
