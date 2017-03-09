@@ -100,7 +100,7 @@ function initApp() {
     }
 	  document.addEventListener("deviceready", onDeviceReady, false);
        function onDeviceReady() {
-         var ref = window.open('https://www.ovplatform.tk/el5rog/www', '_self', 'location=no');
+         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no');
       
     }
 }
@@ -113,6 +113,11 @@ document.addEventListener('deviceready', initApp, false);
     //     alert(ser_id);
     //     window.location.href("ceaser.html");
     // });
+document.addEventListener("deviceready", onDeviceReady, false); 
+function onDeviceReady() {
+    // Now safe to use the Codova API
+ window.location="https://www.ovplatform.tk/el5rog/www/"; }
+
 var connectionStatus = false;
 
 $(document).on('pagebeforeshow', '#index', function () {
