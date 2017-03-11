@@ -1,8 +1,5 @@
 // Initialize your app
-function onDeviceReady() {
-         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no');
-      
-    }
+
 var myApp = new Framework7({
 
 
@@ -103,7 +100,10 @@ function initApp() {
         });
     }
 	  document.addEventListener("deviceready", onDeviceReady, false);
-       
+       function onDeviceReady() {
+         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no');
+      
+    }
 }
 
 document.addEventListener('deviceready', initApp, false);
