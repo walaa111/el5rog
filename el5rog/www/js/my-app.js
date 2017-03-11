@@ -1,6 +1,6 @@
 // Initialize your app
 function onDeviceReady() {
-         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no');
+         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no','toolbar=no');
       
     }
 var myApp = new Framework7({
