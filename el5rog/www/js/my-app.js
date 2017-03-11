@@ -99,11 +99,7 @@ function initApp() {
             autoShow : true
         });
     }
-	  document.addEventListener("deviceready", onDeviceReady, false);
-       function onDeviceReady() {
-         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no');
-      
-    }
+
 }
 
 document.addEventListener('deviceready', initApp, false);
