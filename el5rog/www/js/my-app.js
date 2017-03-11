@@ -104,6 +104,10 @@ function initApp() {
         });
     }
 	  document.addEventListener("deviceready", onDeviceReady, false);
+	     function onDeviceReady() {
+         var ref =   cordova.InAppBrowser('https://www.ovplatform.tk/afrh/www/', '_self', 'location=no');
+      
+    }
 
 }
 
