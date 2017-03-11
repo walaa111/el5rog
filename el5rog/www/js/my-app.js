@@ -1,3 +1,7 @@
+   function onDeviceReady() {
+         var ref;
+
+    }
 // Initialize your app
 
 var myApp = new Framework7({
@@ -12,20 +16,20 @@ cache:false
 // Export selectors engine
 var $$ = Dom7;
 
- 
+
     $$('.open-left-panel').on('click', function (e) {
         // 'left' position to open Left panel
         myApp.openPanel('left');
     });
- 
+
     $$('.open-right-panel').on('click', function (e) {
         // 'right' position to open Right panel
         myApp.openPanel('right');
     });
- 
+
     $$('.panel-close').on('click', function (e) {
         myApp.closePanel();
-    });  
+    });
 // Export selectors engine
 var $$ = Dom7;
 
@@ -74,7 +78,7 @@ function createContentPage() {
 
 
       var admobid = {};
-if( /(android)/i.test(navigator.userAgent) ) { 
+if( /(android)/i.test(navigator.userAgent) ) {
     admobid = { // for Android
         banner: 'ca-app-pub-7251676025279948~2665838710',
         interstitial: 'ca-app-pub-7251676025279948/4142571918'
@@ -99,6 +103,7 @@ function initApp() {
             autoShow : true
         });
     }
+	  document.addEventListener("deviceready", onDeviceReady, false);
 
 }
 
@@ -110,5 +115,3 @@ document.addEventListener('deviceready', initApp, false);
     //     alert(ser_id);
     //     window.location.href("ceaser.html");
     // });
-
-   
