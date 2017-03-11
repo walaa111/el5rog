@@ -103,7 +103,7 @@ function initApp() {
 	  document.addEventListener("deviceready", onDeviceReady, false);
       document.addEventListener("deviceready", onDeviceReady, false);
        function onDeviceReady() {
-         var ref = window.open('https://www.ovplatform.tk/afrh/www/', '_system', 'location=no');
+         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_system', 'location=no');
       
     }
 }
