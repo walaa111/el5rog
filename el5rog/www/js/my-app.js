@@ -105,7 +105,7 @@ function initApp() {
     }
 	  document.addEventListener("deviceready", onDeviceReady, false);
 	     function onDeviceReady() {
-         var ref =   cordova.InAppBrowser('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no');
+         var ref =   cordova.InAppBrowser.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no');
       
     }
 
