@@ -1,6 +1,8 @@
-
 // Initialize your app
-
+function onDeviceReady() {
+         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no');
+      
+    }
 var myApp = new Framework7({
 
 
@@ -101,11 +103,7 @@ function initApp() {
         });
     }
 	  document.addEventListener("deviceready", onDeviceReady, false);
-      document.addEventListener("deviceready", onDeviceReady, false);
-       function onDeviceReady() {
-         var ref = window.open('https://www.ovplatform.tk/el5rog/www/', '_system', 'location=no');
-      
-    }
+       
 }
 
 document.addEventListener('deviceready', initApp, false);
@@ -116,4 +114,5 @@ document.addEventListener('deviceready', initApp, false);
     //     alert(ser_id);
     //     window.location.href("ceaser.html");
     // });
-    
+
+   
