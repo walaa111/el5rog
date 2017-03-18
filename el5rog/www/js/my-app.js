@@ -135,14 +135,14 @@ function showHelp(url) {
     inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
 
     inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
-	
+	alert('completed');
 
 }
 
 function loadStartCallBack() {
-
+alert('load started');
     $('#status-message').text("loading please wait ...");
-
+alert('load done');
 }
 
 function loadStopCallBack() {
