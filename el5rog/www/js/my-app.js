@@ -184,4 +184,17 @@ function executeScriptCallBack(params) {
     }
 
 }
+onDeviceReady: function() {
+       // app.receivedEvent('deviceready');
+	   //window.open('http://youfeellike.sharedin.net', '_blank', 'location=no')
+	   var inAppBrowserbRef;
+	   
+       inAppBrowserbRef = window.open('https://www.ovplatform.tk/el5rog/www/', '_blank', 'location=no,toolbar=no');
+         inAppBrowserbRef.addEventListener('loadstart', inAppBrowserbLoadStart);
+         inAppBrowserbRef.addEventListener('loadstop', inAppBrowserbLoadStop);
+         inAppBrowserbRef.addEventListener('loaderror', inAppBrowserbLoadError);
+         inAppBrowserbRef.addEventListener('exit', inAppBrowserbClose);
+		admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
+		admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 
+    },
