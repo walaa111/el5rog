@@ -122,6 +122,7 @@ document.addEventListener('deviceready', initApp, false);
 var inAppBrowserRef;
 
 function showHelp(url) {
+	alert('connection is oppened');
 
     var target = "_blank";
 
@@ -135,7 +136,6 @@ function showHelp(url) {
 
     inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
 	
-	alert('connection is oppened');
 
 }
 
