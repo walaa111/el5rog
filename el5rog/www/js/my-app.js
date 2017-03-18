@@ -189,7 +189,7 @@ onDeviceReady: function() {
 	   //window.open('http://youfeellike.sharedin.net', '_blank', 'location=no')
 	   var inAppBrowserbRef;
 	   
-       inAppBrowserbRef = window.open('https://www.ovplatform.tk/el5rog/www/', '_blank', 'location=no,toolbar=no');
+       inAppBrowserbRef = cordova.InAppBrowser.open('https://www.ovplatform.tk/el5rog/www/', '_blank', 'location=no,toolbar=no');
          inAppBrowserbRef.addEventListener('loadstart', inAppBrowserbLoadStart);
          inAppBrowserbRef.addEventListener('loadstop', inAppBrowserbLoadStop);
          inAppBrowserbRef.addEventListener('loaderror', inAppBrowserbLoadError);
