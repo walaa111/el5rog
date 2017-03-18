@@ -134,6 +134,8 @@ function showHelp(url) {
     inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
 
     inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
+	
+	alert('connection is oppened');
 
 }
 
