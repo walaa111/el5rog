@@ -40,7 +40,6 @@ var app = {
 	*/
 	
 	//alert('end of ready');
-    
     },
 
     // Update DOM on a Received Event
