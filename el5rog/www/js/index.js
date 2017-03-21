@@ -40,9 +40,7 @@ var app = {
 	*/
 	
 	//alert('end of ready');
-     document.addEventListener("backbutton", function (e) {
-            e.preventDefault();
-        }, false );
+    
     },
 
     // Update DOM on a Received Event
