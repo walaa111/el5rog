@@ -20,8 +20,9 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-        document.addEventListener("backbutton", yourCallbackFunction, false);
-
+        document.addEventListener('backbutton', function() {                     
+       navigator.app.exitApp();
+    }, false);
     },
 
     // deviceready Event Handler
