@@ -23,7 +23,16 @@ var app = {
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
         document.addEventListener("backbutton", yourCallbackFunction, false);
+var networkState = navigator.connection.type;
 
+    if (networkState == Connection.NONE)
+    {
+        alert('No network connection!');
+    }
+    else
+    {
+        alert('connection is oppened!');
+    }
     },
 
     // deviceready Event Handler
