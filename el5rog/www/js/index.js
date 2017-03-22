@@ -61,7 +61,7 @@ var app = {
   function yourCallbackFunction(e) {
     e.preventDefault();
  navigator.app.exitApp(); 
- 
+ alert('exitapp');
     }
 
 app.initialize();
