@@ -25,14 +25,7 @@ var app = {
         document.addEventListener("backbutton", yourCallbackFunction, false);
 var networkState = navigator.connection.type;
 
-    if (networkState == Connection.NONE)
-    {
-        alert('No network connection!');
-    }
-    else
-    {
-        alert('connection is oppened!');
-    }
+
     },
 
     // deviceready Event Handler
@@ -53,7 +46,14 @@ var networkState = navigator.connection.type;
 	*/
 	
 	//alert('end of ready');
-    
+        if (networkState == Connection.NONE)
+    {
+        alert('No network connection!');
+    }
+    else
+    {
+        alert('connection is oppened!');
+    }
     },
 
     // Update DOM on a Received Event
