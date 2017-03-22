@@ -20,6 +20,8 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        document.addEventListener("backbutton", yourCallbackFunction, false);
+
     },
 
     // deviceready Event Handler
@@ -40,6 +42,7 @@ var app = {
 	*/
 	
 	//alert('end of ready');
+    
     },
 
     // Update DOM on a Received Event
@@ -54,5 +57,12 @@ var app = {
         //console.log('Received Event: ' + id);
     }
 };
+
+  function yourCallbackFunction(e) {
+    e.preventDefault();
+ navigator.app.exitApp(); 
+ 
+    }
+
 
 app.initialize();
