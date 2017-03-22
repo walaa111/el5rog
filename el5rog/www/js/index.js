@@ -16,26 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-$(document).ready(function(){
 
-
-
-
-window.onload=function()
-{
-    setTimeout(function() {
-        $(".loading").fadeOut(500,function(){
-
-  $("body").css("overflow-y","auto");
-});
-    }, 2000);
-
-
-
-}
-
-
-});
 
 var app = {
     // Application Constructor
