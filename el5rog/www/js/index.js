@@ -25,7 +25,7 @@ var app = {
         document.addEventListener("backbutton", yourCallbackFunction, false);
 var networkState = navigator.connection.type;
 
-
+checkConnection();
     },
 
     // deviceready Event Handler
@@ -48,7 +48,7 @@ var networkState = navigator.connection.type;
 	//alert('end of ready');
 
 
-checkConnection();
+
     },
 
     // Update DOM on a Received Event
