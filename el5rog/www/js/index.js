@@ -46,6 +46,7 @@ var app = {
 	*/
 	
 	//alert('end of ready');
+
 function checkConnection() {
     var networkState = navigator.connection.type;
  
@@ -63,7 +64,6 @@ function checkConnection() {
 }
  
 checkConnection();
-
     },
 
     // Update DOM on a Received Event
