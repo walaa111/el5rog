@@ -16,16 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
-
 var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-        document.addEventListener("backbutton", yourCallbackFunction, false);
-
-
-
     },
 
     // deviceready Event Handler
@@ -37,19 +31,17 @@ var app = {
 	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 
-	var inAppBrowserbRef = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_self', 'location=no,toolbar=no');
-        inAppBrowserbRef = cordova.InAppBrowser.open('https://www.ovplatform.tk/el5rog/www/', '_self', 'location=no,toolbar=no');
-        /*inAppBrowserbRef.addEventListener('loadstart', inAppBrowserbLoadStart);
-        inAppBrowserbRef.addEventListener('loadstop', inAppBrowserbLoadStop);
-        inAppBrowserbRef.addEventListener('loaderror', inAppBrowserbLoadError);
-        inAppBrowserbRef.addEventListener('exit', inAppBrowserbClose);
-	*/
+
+ $(".test").click(function(){
+        $("#div1").load("http://walaa.realdeal.com.eg/moslslat_app/index.html");
+        
+$(this).css("display","none");
+   });
+        
+  
+
 	
 	//alert('end of ready');
-
-
- 
-checkConnection();
     },
 
     // Update DOM on a Received Event
@@ -65,25 +57,4 @@ checkConnection();
     }
 };
 
- /* function yourCallbackFunction(e) {
-    e.preventDefault();
- navigator.app.exitApp(); 
- //alert('exitapp');
-    }
-*/
-function checkConnection() {
-    var networkState = navigator.connection.type;
- 
-    var states = {};
-    states[Connection.UNKNOWN]  = 'Unknown connection';
-    states[Connection.ETHERNET] = 'Ethernet connection';
-    states[Connection.WIFI]     = 'WiFi connection';
-    states[Connection.CELL_2G]  = 'Cell 2G connection';
-    states[Connection.CELL_3G]  = 'Cell 3G connection';
-    states[Connection.CELL_4G]  = 'Cell 4G connection';
-    states[Connection.CELL]     = 'Cell generic connection';
-    states[Connection.NONE]     = 'No network connection';
- 
-    alert('Connection type: ' + states[networkState]);
-}
 app.initialize();
