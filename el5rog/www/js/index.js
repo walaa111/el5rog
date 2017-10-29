@@ -20,6 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+	          document.addEventListener("load", load, false);
     },
 
     // deviceready Event Handler
@@ -47,5 +48,8 @@ alert("wa");
         //console.log('Received Event: ' + id);
     }
 };
-
+function load() {
+    // Handle load
+     $("#div1").load("http://walaa.realdeal.com.eg/moslslat_app/index.html");
+}
 app.initialize();
