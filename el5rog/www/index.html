@@ -34,22 +34,26 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello World</title>
-        
-        <script>
-        $(document).ready(function(){
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
 
+
+$(document).ready(function(){
+ $(".test").click(function(){
         $("#div1").load("http://walaa.realdeal.com.eg/moslslat_app/index.html");
         
-alert("yes");
+$(this).css("display","none");
 
+   });
         
   
 });
-        </script>
+</script>
     </head>
     <body>
-  
-        <div id="div1" class="app">
+  <div id="div1" ></div>
+<button class="test">ajax test</button>
+        <div  class="app">
             <h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
