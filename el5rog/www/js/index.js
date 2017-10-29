@@ -31,12 +31,10 @@ var app = {
 	admob.initAdmob("ca-app-pub-7251676025279948/7827344712","ca-app-pub-7251676025279948/5792208319");
 	admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
 
-
- 
-  
-
+$(".test").click(function(){
+   alert('end of ready');
+   });
 	
-	alert('end of ready');
     },
 
     // Update DOM on a Received Event
